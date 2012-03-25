@@ -1,8 +1,8 @@
 var map;
 
 var url = 'http://api.tiles.mapbox.com/v3/';
-var baselayer = "mapbox.mapbox-streets"
-var activelayer = "djohnson.romney-final";
+var baselayer = "occupy.background"
+var activelayer = "occupy.4q11-delinq";
 
 // Define a custom icon using the Maki museum icon
 var museumIcon = L.Icon.extend({
@@ -51,7 +51,7 @@ function refreshMap(layers) {
 
 $(document).ready(function () {
 
-  $('ul.layers li a').click(function (e) {
+  $('sidebar ul.layers li a').click(function (e) {
     e.preventDefault();
     if (!$(this).hasClass('active')) {
       $('ul.layers li a').removeClass('active');
