@@ -15,7 +15,7 @@ wax.tilejson(url + baselayer + ',' + activelayer + '.jsonp', function(tilejson) 
 });
 
 function refreshMap(layers) {
-  wax.tilejson('http://api.tiles.mapbox.com/v3/' + layers + '.jsonp', function (tilejson) {
+  wax.tilejson('http://api.tiles.mapbox.com/v2/' + layers + '.jsonp', function (tilejson) {
     map.addLayer(new wax.leaf.connector(tilejson));
 
     tilejson.minzoom = 2;
