@@ -29,6 +29,20 @@ function refreshMap(layers) {
 
 $(document).ready(function () {
 
+  // create a new UI Slider. Requires jQuery version 1.8
+  // http://docs.jquery.com/UI/API/1.8/Slider
+  $("#slider").slider({min:1999, max: 2011});
+
+  // refresh the map every time the slider changes
+  $("#slider").bind( "slidechange", function(event, ui) {
+  	// occupy.4q11-delinq
+  	var value = $("#slider").slider("value") + "";
+  	var year = value.substring(2,4);
+  	var activeLayer = "occupy.4q" + year + "-delinq";
+  	var layers = [baselayer, activeLayer];
+  	refreshMap(layers);
+  });
+
   $('ul.layers li a').click(function (e) {
     e.preventDefault();
     if (!$(this).hasClass('active')) {
