@@ -6,7 +6,7 @@ var activelayer = "occupy.4q11-delinq";
 
 wax.tilejson(url + baselayer + ',' + activelayer + ',occupy.state-lines' + '.jsonp', function(tilejson) {
   map = new L.Map('map')
-    .setView(new L.LatLng(39, -78), 4);
+    .setView(new L.LatLng(39, -88), 4);
   layer = new wax.leaf.connector(tilejson);
   map.addLayer(layer);
   interactivity = wax.leaf.interaction()
