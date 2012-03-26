@@ -3,23 +3,22 @@
   <head>
     <meta charset=utf-8 />
     <title>Cost of the Crisis</title>
-    <link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon' />
-	<link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
-    <link rel='stylesheet' href='css/reset.css' type='text/css' />
-    <link rel='stylesheet' href='css/style.css' type='text/css' />
-    <link rel="stylesheet" href="js/leaflet.css" />
-	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
-
-
+    <link href='css/reset.css' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <link href='wax/ext/leaflet.css' rel='stylesheet' type='text/css' />
+    <link href='wax/theme/controls.css' rel='stylesheet' type='text/css' />
+    <link href='css/style.css' rel='stylesheet' type='text/css' />
   </head>
   <body>
 
     <div id='map'>
     </div>
-<div id="title">The Human Cost of the Global Financial Crisis</div>
+
+    <div id="title">The Human Cost of the Global Financial Crisis</div>
 
     <div class="about">
-	<div class="explanation"<h1>Percentage of people who have fallen behind on their mortgage payments for over 90 days</h1>
+      <h1>Percentage of people who have fallen behind on their mortgage payments for over 90 days</h1>
       <ul class="layers">
         <li><a class="active" data-layer="occupy.4q11-delinq" href="#">2011</a></li>
         <li><a data-layer="occupy.4q10-delinq" href="#">2010</a></li>
@@ -31,20 +30,19 @@
         <li><a data-layer="occupy.4q04-delinq" href="#">2004</a></li>
         <li><a data-layer="occupy.4q03-delinq" href="#">2003</a></li>
         <li><a data-layer="occupy.4q02-delinq" href="#">2002</a></li>
-	    <li><a data-layer="occupy.4q01-delinq" href="#">2001</a></li>
-	    <li><a data-layer="occupy.4q00-delinq" href="#">2000</a></li>
-	    <li><a data-layer="occupy.4q99-delinq" href="#">1999</a></li>
+        <li><a data-layer="occupy.4q01-delinq" href="#">2001</a></li>
+        <li><a data-layer="occupy.4q00-delinq" href="#">2000</a></li>
+        <li><a data-layer="occupy.4q99-delinq" href="#">1999</a></li>
       </ul>
-	</div>
     </div>
 
-	<div id="slider"></div>
+    <div id="slider"></div>
 
-	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-	 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 
-    <script src="js/leaflet.js"></script>
-    <script src="js/wax.leaf.min.js"></script>
-    <script src="js/app2.js"></script>
+    <script src="wax/ext/leaflet.js"></script>
+    <script src="wax/dist/wax.leaf.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

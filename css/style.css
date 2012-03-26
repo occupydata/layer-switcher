@@ -4,6 +4,7 @@
 @blue1:#2f040a;
 @yellow:#30a9cf;
 @white:#ffffff;
+
 #map {
   width:100%;
   height:100%;
@@ -12,47 +13,47 @@
   top:0;
   left:0;
 }
-.title {
-	width:80%;
-	position:absolute;
-	top:0;
-	right:0;
-	font-family: 'Karla', sans-serif;
+
+#title {
+  padding:20px;
+  position:absolute;
+  top:0;
+  right:10%;
+  background-color:rgba(0,0,0,0.75);
+  color:#fea;
+  font-family: 'Karla', sans-serif;
+  text-align:center;
+}
+
+.wax-tooltip {
+  padding:20px;
+  top:0;
+  left:10%;
+  color:#fea;
+  font-family: 'Karla', sans-serif;
 }
 
 .about {
-  width:80%;
+  padding:20px;
   position:absolute;
   bottom:0;
-  top:70%;
   right:10%;
   left:10%;
-  padding:20px;
-  font-size:16;
-  bottom:0;
-  right:0;
   color:#fea;
   background-color:rgba(0,0,0,0.75);
   font-family: 'Karla', sans-serif;
+  font-size:16px;
   font-weight:normal;
 }
 
-#explanation {
-	width:80%;
-    position:absolute;
-    bottom:0;
-    top:70%;
-    right:10%;
-    left:10%;
-	text-align:left;
-	
-}
 .source {
-	font-size:12pt;
+  font-size:12pt;
 }
+
 .source:hover a{
-	color:blue;
+  color:blue;
 }
+
 .about h1 {
   font-family: 'Karla', sans-serif;
   font-size:18px;
@@ -64,7 +65,7 @@
 ul.layers li a {
   color:#fea;
   font-family: 'Karla', sans-serif;
-  font-size:24px;
+  font-size:16px;
   line-height:normal;
   text-decoration:none;
 }
@@ -75,9 +76,9 @@ ul.layers li a.active {
 
 /* absolutely positioned the slider beneath the map*/
 #slider {
-	margin: 10px;
-	width: 400px;
-	position: absolute;
-	bottom: 80px;
-	left: 250px;
+  margin: 10px;
+  width: 400px;
+  position: absolute;
+  bottom: 80px;
+  left: 250px;
 }
