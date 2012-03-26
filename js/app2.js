@@ -8,11 +8,10 @@ wax.tilejson(url + baselayer + ',' + activelayer + ',occupy.state-lines' + '.jso
   map = new L.Map('map')
   .setView(new L.LatLng(39, -78), 4)
   .addLayer(new wax.leaf.connector(tilejson));
-  wax.mm.interaction()
+  wax.leaf.interaction()
     .map(map)
     .tilejson(tilejson)
-    .on(wax.tooltip().animate(true).parent(map.parent).events());
-
+    .on(wax.tooltip().animate(true).parent(map._container).events());
   tilejson.minzoom = 2;
   tilejson.maxzoom = 7;
   
@@ -21,7 +20,13 @@ wax.tilejson(url + baselayer + ',' + activelayer + ',occupy.state-lines' + '.jso
 function refreshMap(layers) {
   wax.tilejson('http://api.tiles.mapbox.com/v2/' + layers + ',occupy.state-lines' + '.jsonp', function (tilejson) {
     map.addLayer(new wax.leaf.connector(tilejson));
-
+  wax.leaf.interaction()
+    .map(map)
+    .tilejson(tilejson)
+    .on(wax.tooltip().animate(true).parent(map._container).events());
+  wax.tooltip()
+	.animate(true)
+	.parent()
     tilejson.minzoom = 2;
     tilejson.maxzoom = 7;
   });
