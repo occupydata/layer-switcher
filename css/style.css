@@ -84,19 +84,19 @@ ul.layers li a.active {
 }
 
 .wax-tooltip {
+  max-width:300px;
+  padding:20px;
   z-index:999999;
   position:absolute;
+  right:0;
+  top:0;
   background:#333;
   color:#fff;
-  padding:10px;
   -webkit-user-select:auto;
-  right:10px;
-  top:10px;
-  max-width:300px;
   opacity:1;
   -webkit-transition:opacity 150ms;
   -moz-transition:opacity 150ms;
-  }
+}
 
 .wax-fade { opacity:0; }
 

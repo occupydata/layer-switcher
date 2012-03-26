@@ -1,3 +1,6 @@
 [submodule "wax"]
 	path = wax
 	url = git://github.com/mapbox/wax.git
+[submodule "leaflet"]
+	path = leaflet
+	url = git://github.com/CloudMade/Leaflet.git
