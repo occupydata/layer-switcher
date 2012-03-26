@@ -72,3 +72,12 @@ ul.layers li a {
 ul.layers li a.active {
   color:#74b6e6;
 }
+
+/* absolutely positioned the slider beneath the map*/
+#slider {
+	margin: 10px;
+	width: 400px;
+	position: absolute;
+	bottom: 80px;
+	left: 250px;
+}
